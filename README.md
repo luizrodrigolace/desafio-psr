@@ -22,7 +22,7 @@
   
     get: localhost:3000/products
  
- Para retornar uma instâncias do banco de dados pelo seu id:
+ Para retornar uma instância do banco de dados pelo seu id:
   
     ex:
     get: localhost:3000/products/1
