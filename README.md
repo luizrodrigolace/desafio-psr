@@ -6,7 +6,7 @@
 
  3: Clone o repositório
  
- 4: Execute os seguintes comandos dentro da pasta da API para instalar o express, sequelize, sqlite 3 e o nodemon:
+ 4: Execute os seguintes comandos dentro da pasta da API para instalar o express, sequelize, sqlite3 e o nodemon:
  
     npm init -y
     npm i express sequelize sqlite3
