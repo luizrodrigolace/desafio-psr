@@ -5,7 +5,7 @@ const ProductController = require("../controllers/ProductController");
 
 const router = Router();
 
-// rotas com os metodos de CRUD
+// rotas com os metodos de CRUD na ordem dos verbos HTTP(get, post,put e delete)
 router.get('/products',ProductController.index);
 router.get('/products/:id',ProductController.show);
 router.post('/products',ProductController.create);

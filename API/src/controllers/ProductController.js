@@ -1,5 +1,7 @@
 const Product = require("../models/Product");
 
+
+//método que retorna todas as intâncias de produto presentes no banco de dados.
 const index = async(req,res) => {
   try {
     const products = await Product.findAll();
@@ -10,6 +12,7 @@ const index = async(req,res) => {
   }
 };
 
+//método que retorna um produto pelo seu id.
 const show = async(req,res) => {
   const {id} = req.params;
   try {
@@ -21,6 +24,7 @@ const show = async(req,res) => {
   }
 };
 
+//método que cria um produto no banco de dados.
 const create = async(req,res) => {
   try{
         const product = await Product.create(req.body);
@@ -31,6 +35,7 @@ const create = async(req,res) => {
     }
 };
 
+//método que atualiza um produto pelo banco de dados pelo seu id.
 const update = async(req,res) => {
   const {id} = req.params;
   try {
@@ -45,6 +50,7 @@ const update = async(req,res) => {
   }
 };
 
+//método que deleta o produto do banco de dados pelo seu id.
 const destroy = async(req,res) => {
   const {id} = req.params;
   try {
